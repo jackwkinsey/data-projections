@@ -28,16 +28,34 @@ namespace ProjectionTesting.Core
 
         private static object GetPropertyValue(object obj, string property)
         {
-            return obj.GetType().GetProperties()
-                .Single(prop => string.Equals(prop.Name, property, StringComparison.CurrentCultureIgnoreCase))
-                .GetValue(obj);
+            try
+            {
+                return obj.GetType().GetProperties()
+                    .Single(prop => string.Equals(prop.Name, property, StringComparison.CurrentCultureIgnoreCase))
+                    .GetValue(obj);
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"Property, {property} not found on {obj}. Returning null instead.");
+            }
+
+            return null;
         }
 
         private static void SetPropertyValue(object obj, string property, object value)
         {
-            obj.GetType().GetProperties()
-                .Single(prop => string.Equals(prop.Name, property, StringComparison.CurrentCultureIgnoreCase))
-                .SetValue(obj, value);
+            try
+            {
+                obj.GetType().GetProperties()
+                    .Single(prop => string.Equals(prop.Name, property, StringComparison.CurrentCultureIgnoreCase))
+                    .SetValue(obj, value);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(
+                    $"Unable to assign value, '{value}', to the property, '{property}', on {obj}. Using default value for property.");
+            }
         }
     }
 }
