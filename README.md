@@ -10,3 +10,6 @@ from one generic type to another through the use of an entity map which is just 
 entity map is used to describe the mapping of properties from one type to the other
 
 (key = destination property, value = source property)
+
+To run the demo, clone and open the solution file in Visual Studio and run the ProjectionTesting.App project. This a simple console
+application that will display a list of points using the dummy car data.
