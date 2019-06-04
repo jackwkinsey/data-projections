@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectionTesting.Core", "ProjectionTesting.Core\ProjectionTesting.Core.csproj", "{1FF9C18A-1602-4EB4-B4D2-381E5BFBDB30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectionTesting.Core", "ProjectionTesting.Core\ProjectionTesting.Core.csproj", "{1FF9C18A-1602-4EB4-B4D2-381E5BFBDB30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectionTesting.App", "ProjectionTesting.App\ProjectionTesting.App.csproj", "{B573BF0D-95FC-413D-B547-30640AB58515}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectionTesting.App", "ProjectionTesting.App\ProjectionTesting.App.csproj", "{B573BF0D-95FC-413D-B547-30640AB58515}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectionTesting.Data", "ProjectionTesting.Data\ProjectionTesting.Data.csproj", "{73CFB960-25D8-4704-BD21-3995A004E3B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectionTesting.Data", "ProjectionTesting.Data\ProjectionTesting.Data.csproj", "{73CFB960-25D8-4704-BD21-3995A004E3B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
