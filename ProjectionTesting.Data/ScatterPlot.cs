@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjectionTesting.Core
+namespace ProjectionTesting.Data
 {
     public class ScatterPlot
     {
