@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using ProjectionTesting.Data;
 
 namespace ProjectionTesting.App
 {
@@ -12,9 +13,9 @@ namespace ProjectionTesting.App
             var entityMap = new Dictionary<string, string>()
             {
                 {"x", "year"},
-                {"Y", "Cylinders"},
-                {"Radius", "HP"},
-                {"Color", "Make"}
+                {"y", "cylinders"},
+                {"radius", "hp"},
+                {"color", "make"}
             };
 
             var p = Projection.Map<object, Point>(new
@@ -83,7 +84,6 @@ namespace ProjectionTesting.App
 
             plot.Points = Projection.MapList<object, Point>(cars, entityMap);
             var plotPoints = plot.Points as Point[] ?? plot.Points.ToArray();
-            Console.WriteLine(plotPoints.Length);
 
             foreach (var point in plotPoints)
             {
