@@ -11,5 +11,12 @@ entity map is used to describe the mapping of properties from one type to the ot
 
 (key = destination property, value = source property)
 
-To run the demo, clone and open the solution file in Visual Studio and run the ProjectionTesting.App project. This a simple console
-application that will display a list of points using the dummy car data.
+## Running the demo
+After cloning the repo, navigate to the ProjectionTesting.App directory and run:
+
+```
+dotnet run
+```
+
+If you have a .NET Core Runtime installed then you should see some output of points.
+These points are created by mapping dummy car data to the Point class.
